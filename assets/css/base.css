@@ -1,0 +1,44 @@
+:root{
+    --black-color: #000;
+    --background-color: #fff;
+    --hover-color: #ccc;
+}
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:  Helvetica, Arial, sans-serif;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.row-third{
+    margin-bottom: 10px;
+} 
+.mt-8 {
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.column{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
