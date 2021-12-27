@@ -6,7 +6,7 @@
 4. Kiểu dáng
 */
 #wrapper{
-
+    align-items: center;
 }
 .text-white{
     color: var(--background-color);
@@ -19,7 +19,15 @@
     z-index: 1;
     left: 0;
     right: 0;
+    /* overflow: hidden; */
 }
+#header .mobile-menu-bnt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu-bnt,
 #header .header-search{
     float: right;
     color: var(--background-color);
@@ -27,12 +35,18 @@
     padding: 0 40px;
     font-size: 20px;
     cursor: pointer;
+    
 }
 .clear{
     clear: both;
 }
+
 #header .header-search:hover{
     background-color: orange;
+}
+#header .mobile-menu-bnt:hover{
+    background-color: #ccc;
+    color: #000;
 }
 #nav{
     display: inline-block;
@@ -104,8 +118,12 @@
 }
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 64px 0;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #content .section-heading{
     font-size: 30px;
@@ -337,4 +355,83 @@
 }
 .socials-list:hover i{
     color: rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 740px){
+    #wrapper{
+        width: 100%;
+        align-items: center ;
+    }
+    #header{
+       max-width: 100%;
+        overflow: hidden;
+    }
+    #header .header-search{
+        display: none;
+    }
+    #header .mobile-menu-bnt{
+        display: block;
+    }
+  
+    #nav > li{
+        display: block;
+    }
+    #nav li a{
+        padding: 1px 24px;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background: #333;
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #content .member-list{
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+    #content .member-item{
+        width: 100%;
+    }
+    #content .member-img{
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    #contact .contact-content{
+        display: flex;
+        flex-direction: column;
+    }
+    #contact .contact-infor{
+        width: 100%;
+        margin-bottom: 16px;
+
+    }
+    #contact .contact-form{
+        width: 95%;
+    }
+   .ivideo{
+       width: 95%;
+   }
+   .s-ful-width{
+       width: 100% !important;
+   }
+}
+@media (max-width: 1023px){
+    .bnt-submit,
+    .register{
+        padding: 15px 16px;
+    }
+    .contact-form .form-control{
+        padding: 15px;
+    }
+    .contact-infor{
+        line-height: 2;
+    }
+    #nav .subnav a{
+        padding: 5px 12px;
+    }
 }
