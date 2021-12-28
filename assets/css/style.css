@@ -98,7 +98,7 @@
 }
 #slider {
     margin-top: 46px;
-    background: url(/assets/image/hdfhd.jpg)  center / cover no-repeat ;
+    background: url(../assets/image/hdfhd.jpg)  center / cover no-repeat ;
     padding-top: 50%;
     position: relative;
 }
@@ -107,6 +107,7 @@
     bottom: 47px;
     color: #fff;
     margin-left: 15px;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-heading{
@@ -325,6 +326,7 @@
     color: white;
     background: #000;
     cursor: pointer;
+    -webkit-appearance: none;
 }
 .bnt-submit:hover{
     background: #ccc;
@@ -356,7 +358,7 @@
 .socials-list:hover i{
     color: rgba(0, 0, 0, 0.4);
 }
-@media (max-width: 740px){
+@media (max-width: 46.25em){
     #wrapper{
         width: 100%;
         align-items: center ;
@@ -420,7 +422,7 @@
        width: 100% !important;
    }
 }
-@media (max-width: 1023px){
+@media (max-width:  63.9375em){
     .bnt-submit,
     .register{
         padding: 15px 16px;
